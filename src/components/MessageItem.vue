@@ -3,7 +3,7 @@
         <div class="message-header">
             {{ formatDate(message.date) }} /
             <span style="color: brown">{{ message.authorName }}</span> /
-            {{ message.authorUrl }}
+            <a :href="message.authorUrl" target="_blank">{{ message.authorUrl }}</a>
         </div>
         <div class="message-content">
             <span
